@@ -20,7 +20,11 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    -- quick save
+    ["<C-d>"] = { "<C-d>zz", desc = "Go down half of the screeen then center" },
+    ["<C-u>"] = { "<C-u>zz", desc = "Go up half of the screeen then center" },
+    ["n"] = { "nzzzv", desc = "Find next then center the screen" },
+    ["N"] = { "Nzzzv", desc = "Find previous then center the screen" },
+    -- quick savj
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {

@@ -51,6 +51,11 @@ return {
     end,
   },
   {
+    "ThePrimeagen/vim-be-good",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
     "kevinhwang91/nvim-bqf",
     event = "VeryLazy",
     opts = {},
