@@ -24,6 +24,12 @@ return {
     ["<C-u>"] = { "<C-u>zz", desc = "Go up half of the screeen then center" },
     ["n"] = { "nzzzv", desc = "Find next then center the screen" },
     ["N"] = { "Nzzzv", desc = "Find previous then center the screen" },
+    ["<leader>xx"] = { "<cmd>TroubleToggle<cr>", desc = "Trouble Toggle" },
+    ["<leader>xw"] = { "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Trouble Toggle - Workspace Diagnostics" },
+    ["<leader>xd"] = { "<cmd>TroubleToggle document_diagnostics<cr>", desc = "Trouble Toggle - Document Diagnostics" },
+    ["<leader>xl"] = { "<cmd>TroubleToggle loclist<cr>", desc = "Trouble Toggle - loclist" },
+    ["<leader>xq"] = { "<cmd>TroubleToggle quickfix<cr>", desc = "Trouble Toggle - quickfix" },
+    ["<leader>xR"] = { "<cmd>TroubleToggle lsp_references<cr>", desc = "Trouble Toggle - lsp references" },
     -- quick savj
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },

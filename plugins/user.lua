@@ -51,11 +51,6 @@ return {
     end,
   },
   {
-    "ThePrimeagen/vim-be-good",
-    event = "VeryLazy",
-    opts = {},
-  },
-  {
     "kevinhwang91/nvim-bqf",
     event = "VeryLazy",
     opts = {},
@@ -66,14 +61,15 @@ return {
   },
   {
     "folke/trouble.nvim",
-    keys = {
-      {
-        { prefix,        desc = "Trouble" },
-        { prefix .. "X", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Workspace Diagnostics" },
-        { prefix .. "x", "<cmd>TroubleToggle document_diagnostics<cr>",  desc = "Document Diagnostics" },
-        { prefix .. "q", "<cmd>TroubleToggle quickfix<cr>",              desc = "Quickfix List (Trouble)" },
-      },
-    },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- keys = {
+    --   {
+    --     { prefix,        desc = "Trouble" },
+    --     { prefix .. "X", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Workspace Diagnostics" },
+    --     { prefix .. "x", "<cmd>TroubleToggle document_diagnostics<cr>",  desc = "Document Diagnostics" },
+    --     { prefix .. "q", "<cmd>TroubleToggle quickfix<cr>",              desc = "Quickfix List (Trouble)" },
+    --   },
+    -- },
     opts = {
       use_diagnostic_signs = true,
       action_keys = {
